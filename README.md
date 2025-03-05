@@ -2,10 +2,9 @@ Daniel Ricardo Reyes Aroca
 
 # Parcial #01
 
-Diagrama de EStados
 
 # 1. Diagrama DE Estados (AFD)
-implementa un programa en awk que acepte las siguientes expresiones regulares
+Implementa un Automata Finio Determinista en awk que acepte las siguientes expresiones regulares
 
    +
    ++
@@ -14,15 +13,34 @@ implementa un programa en awk que acepte las siguientes expresiones regulares
 
 A cada expresion se le debe de devolver el token:
 
-   -Para su uso: echo -e "555\n14.16\n+\n++\nBDF" | awk -f AFD.awk
-   -Salida:
-   Expresión: 555 -> Token: ENTERO
-   Expresión: 14.16 -> Token: REAL
-   Expresión: + -> Token: SUMA
-   Expresión: ++ -> Token: INCR
-   Expresión: BDF -> Token: DESCONOCIDO
+   Para su uso: echo -e "555\n14.16\n+\n++\nBDF" | awk -f AFD.awk
+   
+   Salida:
+   
+      Expresión: 555 -> Token: ENTERO
+      Expresión: 14.16 -> Token: REAL
+      Expresión: + -> Token: SUMA
+      Expresión: ++ -> Token: INCR
+      Expresión: BDF -> Token: DESCONOCIDO
 
+# 2. Gramática Regular para Función Lambda en LEX
+Este programa analiza un archivo de texto para verificar si tiene la funcion lambda:
 
+Ejemplo de entrada:
+(preueba.txt)
+lex lambda.l
+gcc lex.yy.c -o verificar_lambda -ll
+echo "square = lambda x: x ** 2" > prueba.txt
+./verificar_lambda < prueba.txt
+NO ACEPTA
+
+# 3. Contador de palabras clave
+Este programa en C cuenta cuántas veces aparece una palabra clave en un archivo de texto.
+   Ejemplo prueba de entrada:
+   El arroz es un alimento básico.
+   Me gusta comer arroz todos los días.
+   El arroz con leche es delicioso.
+   Prefiero arroz integral.
 
 ### :keyboard: Activity: Enable GitHub Pages
 
