@@ -4,20 +4,23 @@ Daniel Ricardo Reyes Aroca
 
 Diagrama de EStados
 
-## Diagrama DE Estados (AFD)
+# 1. Diagrama DE Estados (AFD)
 implementa un programa en awk que acepte las siguientes expresiones regulares
-+
-++
-[0-9]+
-([0-9]+)”.”([0-9])+
+
+   +
+   ++
+   [0-9]+
+   ([0-9]+)”.”([0-9])+
+
 A cada expresion se le debe de devolver el token:
--Para su uso: echo -e "555\n14.16\n+\n++\nBDF" | awk -f AFD.awk
--Salida:
-Expresión: 555 -> Token: ENTERO
-Expresión: 14.16 -> Token: REAL
-Expresión: + -> Token: SUMA
-Expresión: ++ -> Token: INCR
-Expresión: BDF -> Token: DESCONOCIDO
+
+   -Para su uso: echo -e "555\n14.16\n+\n++\nBDF" | awk -f AFD.awk
+   -Salida:
+   Expresión: 555 -> Token: ENTERO
+   Expresión: 14.16 -> Token: REAL
+   Expresión: + -> Token: SUMA
+   Expresión: ++ -> Token: INCR
+   Expresión: BDF -> Token: DESCONOCIDO
 
 
 
