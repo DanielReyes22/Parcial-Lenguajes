@@ -1,31 +1,25 @@
-Parcial 1
+Daniel Ricardo Reyes Aroca
 
-<!--
-  <<< Author notes: Course header >>>
-  Include a 1280×640 image, course title in sentence case, and a concise description in emphasis.
-  In your repository settings: enable template repository, add your 1280×640 social image, auto delete head branches.
-  Add your open source license, GitHub uses MIT license.
--->
+# Parcial #01
 
-# GitHub Pages
+Diagrama de EStados
 
-_Create a site or blog from your GitHub repositories with GitHub Pages._
+## Diagrama DE Estados (AFD)
+implementa un programa en awk que acepte las siguientes expresiones regulares
++
+++
+[0-9]+
+([0-9]+)”.”([0-9])+
+A cada expresion se le debe de devolver el token:
+-Para su uso: echo -e "555\n14.16\n+\n++\nBDF" | awk -f AFD.awk
+-Salida:
+Expresión: 555 -> Token: ENTERO
+Expresión: 14.16 -> Token: REAL
+Expresión: + -> Token: SUMA
+Expresión: ++ -> Token: INCR
+Expresión: BDF -> Token: DESCONOCIDO
 
-</header>
 
-<!--
-  <<< Author notes: Step 1 >>>
-  Choose 3-5 steps for your course.
-  The first step is always the hardest, so pick something easy!
-  Link to docs.github.com for further explanations.
-  Encourage users to open new tabs for steps!
--->
-
-## Step 1: Enable GitHub Pages
-
-_Welcome to GitHub Pages and Jekyll :tada:!_
-
-The first step is to enable GitHub Pages on this [repository](https://docs.github.com/en/get-started/quickstart/github-glossary#repository). When you enable GitHub Pages on a repository, GitHub takes the content that's on the main branch and publishes a website based on its contents.
 
 ### :keyboard: Activity: Enable GitHub Pages
 
